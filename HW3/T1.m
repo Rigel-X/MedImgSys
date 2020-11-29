@@ -1,5 +1,4 @@
-%% Copyright by shaoxin, BME, Tsinghua University.
-%% suzhisanlian & path definition
+
 clear;
 close all
 clc;
@@ -21,7 +20,7 @@ TI=400:200:1200;
 figure;
 for i=1:num
     subplot(2,3,i);
-    imshow(abs(img(:,:,i)),[]);%尽量注意使用“[]”参数，因为这个图像不是标准的8bit数值图像
+    imshow(abs(img(:,:,i)),[]);
     title(['TI=' num2str(TI(i)) 'ms']);
 end
 figure;
